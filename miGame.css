@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+}
+
+.body {
+    display: flex;
+    flex: 1;
+    background-image: url("resources/background1.jpg");
+}
+
+.background {
+    background-image: url("resources/background1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: absolute;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+    display: none;
+    flex: 1;
+}
+
+.obstacle {
+    height: 250px;
+    width: 250px;
+    margin-top: 400px;
+    position: absolute;
+}
+
+.girl {
+    position: absolute;
+    height: 335px;
+    margin-top: 260px;
+}
+
+.score {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.scoreDiv {
+    margin-top: 40px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.end {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+    font-size: 100px;
+    font-weight: bold;
+    color: aliceblue;
+    display: none;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* visibility: hidden; */
+    row-gap: 35px;
+}
+
+.start {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(150, 77, 209);
+    font-size: 100px;
+    font-weight: bold;
+    color: aliceblue;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* visibility: hidden; */
+    row-gap: 35px;
+}
+.start:hover {
+    background-image: radial-gradient(rgb(150, 77, 209) 0%, brown 110%);
+}
+
+.msg {
+    font-size: 150px;
+    font-weight: bold;
+    color: #347a9b;
+}
+
+.btn {
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 20px;
+    cursor: pointer;
+    padding:  10px;
+    font-size: 50px;
+    text-align: center;
+}
+.btn:hover {
+    opacity: 0.7;
+    padding: 35px;
+    font-size: 60px;
+}

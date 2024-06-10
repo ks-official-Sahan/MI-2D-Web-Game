@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D game</title>
+    <link rel="stylesheet" href="miGame.css">
+</head>
+
+
+<body onkeyup="key(event);" onload="createObjects();" class="body" id="body">
+
+    <div class="background" id="background">
+        <!-- <button onclick="test();">Hi</button> -->
+        <div class="scoreDiv">
+            <p id="score" class="score">0</p>
+        </div>
+        <img class="girl"  id="girl" src="resources/Run (1).png">
+    </div>
+
+    <div id="end" class="end">
+        <div id="msg" class="msg"></div>
+        <div class="score">Your Score: </div>
+        <div id="endScore">0</div>
+        <button onclick="restart();" class="btn">New Game</button>
+    </div>
+
+    <div id="start" class="start">
+        <div id="name" class="msg">Jungle Rumble</div>
+        <button onclick="start('200');" class="btn">Easy</button>
+        <button onclick="start('750');" class="btn">Medium</button>
+        <button onclick="start('1500');" class="btn">Hard</button>
+    </div>
+
+    <script src="miGame.js"></script>
+</body>
+</html>
